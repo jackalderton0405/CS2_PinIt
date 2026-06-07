@@ -1,0 +1,21 @@
+# ── .NET build output ──────────────────────────────────────────
+bin/
+obj/
+
+# ── Visual Studio ──────────────────────────────────────────────
+.vs/
+*.user
+
+# ── UI (Node / webpack) ────────────────────────────────────────
+PinIt/UI/node_modules/
+# Ship the prebuilt bundle, ignore the rest of dist/
+PinIt/UI/dist/*
+!PinIt/UI/dist/PinIt.mjs
+
+# ── Tooling / local settings ───────────────────────────────────
+.claude/
+
+# ── CS2 mod save data (never lives here, but guard anyway) ──────
+favourites.json
+favourites.json.bak
+favourites.json.tmp
